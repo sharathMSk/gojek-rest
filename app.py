@@ -3,8 +3,6 @@ import web
 import xml.etree.ElementTree as ET
 from pymongo import MongoClient
 
-tree = ET.parse('user_data.xml')
-root = tree.getroot()
 uri = "mongodb://gojek-sharath:QbXmwBtPdYeG4bwKMWwElvR3xER7NLQycaD5GXpIoUvoYk2OoXKRK2OjKrycNpMD21h8Vs3HozFYkPs1dc97vg==@gojek-sharath.documents.azure.com:10250/?ssl=true&ssl_cert_reqs=CERT_NONE"
 client = MongoClient(uri)
 db=client.test1_database
