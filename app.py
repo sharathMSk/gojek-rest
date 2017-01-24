@@ -19,7 +19,9 @@ class get_user:
         print str(user)
         ret_data = posts.find_one({"user_id": str(user)})
         print str(ret_data).encode('ascii','ignore')
-        return str(ret_data).replace('u\'','\"').replace('\'','\"')
+        formatted_data = str(ret_data).replace('u\'','\"').replace('\'','\"')
+        print formatted_data
+        return formatted_data
 
 class add_route:
     def POST(self):
